@@ -1,12 +1,12 @@
 
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-import * as vscode from 'vscode'; 
+import * as vscode from 'vscode';
 
-import standardFormat = require('standard-format');
+import standardFormat = require('semistandard-format');
 
 export function format(document: vscode.TextDocument, range: vscode.Range, options:vscode.FormattingOptions) {
-	
+
 	if (range === null) {
 		var start = new vscode.Position(0, 0);
 		var end = new vscode.Position(document.lineCount - 1, document.lineAt(document.lineCount - 1).text.length);
@@ -14,18 +14,18 @@ export function format(document: vscode.TextDocument, range: vscode.Range, optio
 	}
 
 	var result: vscode.TextEdit[] = [];
-	
+
 	var content = document.getText(range);
-	
+
 	if (!options) {
 		options = { insertSpaces: true, tabSize: 4 };
 	}
-	
+
 	var formatted = standardFormat.transform(content);
 	if (formatted) {
 		result.push(new vscode.TextEdit(range, formatted));
 	}
-	
+
 	return result;
 };
 
@@ -45,5 +45,5 @@ export function activate(context: vscode.ExtensionContext) {
 			var end = new vscode.Position(document.lineCount - 1, document.lineAt(document.lineCount - 1).text.length);
 			return format(document, new vscode.Range(start, end), options)
 		}
-	}));	
+	}));
 }

@@ -1,22 +1,25 @@
-# VS Code JavaScript Standard Format
+# VS Code JavaScript Semi-Standard Format
 
-This extension adds [Standard format](https://github.com/maxogden/standard-format) function to JavaScript.
+This extension adds [Semi-Standard format](https://github.com/ricardofbarros/semistandard-format) function to JavaScript.
 
-Please only use it when you are ok with [JavaScript Standard Style](http://standardjs.com/).
+Please only use it when you are ok with [JavaScript Standard Style](http://standardjs.com/), but still want your semi-colons.
 
 ## Installation
 
-1. Press `F1` to bring up Command Palette
-2. Search for `Extensions: Install Extension` and select the command, VS Code would load all available extensions
+1. Press `F1` or `cmd+shift+P` to bring up Command Palette
+2. Find `Extensions: Install Extension` and hit enter, VS Code will load all available extensions
     ![Extensions: Install Extension](install-extension.png)
-3. Input `JavaScript Standard Format`, VS Code will filter the extension out, click and install it
-    ![search extension](search-extension.png)
+3. Find `JavaScript Semi-Standard Format`, click or hit enter to install it
+
 
 ## Usage
 
-1. Press `F1` to bring up Command Palette
-2. Search for `Format Code` and click it
-3. Done
+1. Press `shift+alt+P`
+
+or
+
+1. Press `F1` or `cmd+shift+P` to bring up Command Palette
+2. Search for `Format Code` and click or hit enter
 
 ## License
 

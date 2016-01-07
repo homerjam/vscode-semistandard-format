@@ -1,28 +1,29 @@
 {
-  "name": "vscode-standard-format",
-  "displayName": "JavaScript Standard Format",
-  "description": "Converts your code into Standard JavaScript Format",
-  "version": "0.0.4",
-  "publisher": "chenxsan",
+  "name": "vscode-semistandard-format",
+  "displayName": "JavaScript Semi-Standard Format",
+  "description": "Converts your code into Semi-Standard JavaScript Format",
+  "version": "0.0.1",
+  "publisher": "homerjam",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chenxsan/vscode-standard-format/issues",
-    "email": "chenxsan@gmail.com"
+    "url": "https://github.com/homerjam/vscode-semistandard-format/issues",
+    "email": "jameshomer85@gmail.com"
   },
-  "homepage": "https://github.com/chenxsan/vscode-standard-format/blob/master/README.md",
+  "homepage": "https://github.com/homerjam/vscode-semistandard-format/blob/master/README.md",
   "categories": [
     "Languages"
   ],
   "icon": "standard_icon.svg",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chenxsan/vscode-standard-format/"
+    "url": "https://github.com/homerjam/vscode-semistandard-format/"
   },
   "engines": {
     "vscode": "^0.10.1"
   },
   "activationEvents": [
-    "onLanguage:javascript", "onLanguage:javascriptreact"
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact"
   ],
   "main": "./out/src/extension",
   "scripts": {
@@ -30,7 +31,7 @@
     "compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
   },
   "dependencies": {
-    "standard-format": "^2.1.0"
+    "semistandard-format": "^2.1.0"
   },
   "devDependencies": {
     "typescript": "^1.6.2",
