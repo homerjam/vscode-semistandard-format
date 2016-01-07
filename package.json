@@ -2,7 +2,7 @@
   "name": "vscode-semistandard-format",
   "displayName": "JavaScript Semi-Standard Format",
   "description": "Converts your code into Semi-Standard JavaScript Format",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "homerjam",
   "license": "MIT",
   "bugs": {
