@@ -57,6 +57,16 @@ You can also configurate keybinding in `keybindings.json`, for example:
   }
 ]
 ```
+or
+```
+[
+    {
+        "key": "shift+alt+f",
+        "command": "format.semistandard",
+        "when": "editorTextFocus && editorLangId == 'javascript'"
+    }
+]
+```
 
 ## License
 
