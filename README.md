@@ -37,7 +37,7 @@ or
 1. Press `F1` or `cmd+shift+P` to bring up Command Palette
 2. Search for `Format Code` and click or hit enter
 1. Press `F1` to bring up Command Palette
-2. Search for `Format code with semistandard-format` and click it
+2. Search for `Format Code Using JavaScript Semi-Standard` and click it
 3. It will format the whole document
 
 You can also format only those you selects.
@@ -48,8 +48,11 @@ You can also configurate keybinding in `keybindings.json`, for example:
 
 ```
 [
-  {"key": "shift+cmd+f", "command": "format.semistandard",
-  "when": "editorTextFocus"}
+  {
+    "key": "shift+cmd+f",
+    "command": "format.semistandard",
+    "when": "editorTextFocus"
+  }
 ]
 ```
 
