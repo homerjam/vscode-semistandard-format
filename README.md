@@ -4,6 +4,8 @@ This extension adds [Semi-Standard format](https://github.com/ricardofbarros/sem
 
 Please only use it when you are ok with [JavaScript Standard Style](http://standardjs.com/), but still want your semi-colons.
 
+Available on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=homerjam.vscode-semistandard-format).
+
 ## Changes
 
 ### 0.0.8 (2016-03-13)
@@ -59,3 +61,10 @@ You can also configurate keybinding in `keybindings.json`, for example:
 ## License
 
 MIT
+
+## Thanks!
+
+Major thanks to the original author of semi-standard
+
+[Flet](https://github.com/Flet)
+
