@@ -1,4 +1,3 @@
-
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
@@ -27,6 +26,7 @@ export function format(document: vscode.TextDocument, range: vscode.Range, optio
   }
 
   return result;
+
 };
 
 
@@ -39,6 +39,7 @@ export function activate(context: vscode.ExtensionContext) {
       return format(document, null, options)
     }
   }));
+
   context.subscriptions.push(vscode.languages.registerDocumentRangeFormattingEditProvider('javascript', {
     provideDocumentRangeFormattingEdits: (document, range, options, token) => {
       var start = new vscode.Position(0, 0);
@@ -46,14 +47,15 @@ export function activate(context: vscode.ExtensionContext) {
       return format(document, new vscode.Range(start, end), options)
     }
   }));
+
   context.subscriptions.push(vscode.commands.registerTextEditorCommand('format.semistandard', (textEditor, edit) => {
     var { document, selection } = textEditor
     var start;
     var end;
     if (selection.start.line === selection.end.line && selection.start.character === selection.end.character) {
       // no selections, then whole document
-       start = new vscode.Position(0, 0);
-       end = new vscode.Position(document.lineCount - 1, document.lineAt(document.lineCount - 1).text.length);
+      start = new vscode.Position(0, 0);
+      end = new vscode.Position(document.lineCount - 1, document.lineAt(document.lineCount - 1).text.length);
     } else {
       // with selection
       start = new vscode.Position(selection.start.line, 0)
@@ -64,5 +66,6 @@ export function activate(context: vscode.ExtensionContext) {
     var formatted = standardFormat.transform(content);
     var result: vscode.TextEdit[] = [];
     edit.replace(range, formatted);
-  }))
+  }));
+
 }
