@@ -1,8 +1,8 @@
 {
   "name": "vscode-semistandard-format",
-  "displayName": "JavaScript Semi-Standard Format",
-  "description": "Converts your code into Semi-Standard JavaScript Format",
-  "version": "0.0.3",
+  "displayName": "Semistandard Format",
+  "description": "Formats JS code using semistandard",
+  "version": "0.0.9",
   "publisher": "homerjam",
   "license": "MIT",
   "bugs": {
@@ -31,7 +31,7 @@
     "commands": [
       {
         "command": "format.semistandard",
-        "title": "Format Code Using JavaScript Semi-Standard"
+        "title": "Format JS code using semistandard"
       }
     ]
   },
@@ -41,10 +41,10 @@
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "dependencies": {
-    "semistandard-format": "^2.1.0"
+    "semistandard-format": "^3.0.0"
   },
   "devDependencies": {
-    "typescript": "^1.7.5",
-    "vscode": "0.11.x"
+    "typescript": "^1.8.10",
+    "vscode": "^0.11.14"
   }
 }

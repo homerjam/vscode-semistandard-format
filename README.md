@@ -1,12 +1,16 @@
-# VS Code JavaScript Semi-Standard Format
+# VS Code Semistandard Format
 
-This extension adds [Semi-Standard format](https://github.com/ricardofbarros/semistandard-format) function to JavaScript.
+This extension adds [semistandard format](https://github.com/ricardofbarros/semistandard-format) function to JS files.
 
-Please only use it when you are ok with [JavaScript Standard Style](http://standardjs.com/), but still want your semi-colons.
+Please only use it when you are ok with [standardjs](http://standardjs.com/), but still want your semi-colons.
 
 Available on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=homerjam.vscode-semistandard-format).
 
 ## Changes
+
+### 0.0.9 (2016-07-12)
+
+1. Updated `semistandard` to 3.0.0
 
 ### 0.0.8 (2016-03-13)
 
@@ -22,27 +26,10 @@ Available on the [VS Code Marketplace](https://marketplace.visualstudio.com/item
 1. Added a new command to workaround the [problem](https://github.com/chenxsan/vscode-standard-format/issues/1) with the latest Visual Studio Code 0.10.10
 
 
-## Installation
-
-1. Press `F1` or `cmd+shift+P` to bring up Command Palette
-2. Find `Extensions: Install Extension` and hit enter, VS Code will load all available extensions
-    ![Extensions: Install Extension](install-extension.png)
-3. Find `JavaScript Semi-Standard Format`, click or hit enter to install it
-
-
 ## Usage
 
-1. Press `shift+alt+P`
+Use via the command pallette or add keybinding as shown below.
 
-or
-
-1. Press `F1` or `cmd+shift+P` to bring up Command Palette
-2. Search for `Format Code` and click or hit enter
-1. Press `F1` to bring up Command Palette
-2. Search for `Format Code Using JavaScript Semi-Standard` and click it
-3. It will format the whole document
-
-You can also format only those you selects.
 
 ## Keybinding
 
@@ -74,7 +61,7 @@ MIT
 
 ## Thanks!
 
-Major thanks to the original author of semi-standard
+Major thanks to the original author of semistandard
 
 [Flet](https://github.com/Flet)
 
